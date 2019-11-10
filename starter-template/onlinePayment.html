@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href=" <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="red darken-2">
   <!-- Start of side bar -->
@@ -46,11 +47,126 @@
   <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
  </nav>
  <!-- End of Side bar -->
+ <div class="container">
+  <h5><b>Online Payment Services</b></h5><br>
+  <div class="row">
+    <div class="container col s2 red darken-1" style="color: white; border-radius: 15px;"></div>
+    <div class="container col s4 red darken-1" style="color: white; margin-right:10px; border-radius: 15px;">
+      <i class="medium material-icons modal-trigger" href="#modal3">scanner</i>Document Scanner<br>&nbsp;
+    </div>
+    <div class="container col s4 red darken-1" style="color: white; border-radius: 15px;">
+      <i class="medium material-icons modal-trigger" href="#modal2">payment</i><br>Pay Online<br>&nbsp;<br>&nbsp;
+    </div>
+    <div class="container col s2 red darken-1" style="color: white; border-radius: 15px;"></div>
+  </div>
+  <div class="row">
+    <div class="container col s2 red darken-1" style="color: white;  border-radius: 15px;"></div>
+     <div class="container col s4 red darken-1" style="color: white; margin-right:10px; border-radius: 15px;">
+      <i class="medium material-icons modal-trigger" href="#modal1">map</i><br>Locate Nearest Bayad Centers
+    </div>
+    <div class="container col s4 red darken-1" style="color: white; border-radius: 15px;">
+      <i class="medium material-icons modal-trigger" href="#modal4">message</i>Request for Agent Assistance
+    </div>
+    <div class="container col s2 red darken-1" style="color: white; border-radius: 15px;"></div>
+  </div>
+ </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Search Branch Nearby</h4>
+      <p><div class="input-field col s12">
+            <i class="material-icons prefix">map</i>
+            <input id="text1" type="text">
+            <label for="text1">Input location here</label>
+          </div>
+          <div class="input-field col s12">
+            <a href="#" class="btn waves-effect waves-light col s12 red darken-4">Search</a>
+          </div></p>
+          <div>
+            <img src="maps.jpg">
+          </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Done</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Select Mode of Payment</h4>
+      <div class="row">
+        <div class="col s6">
+          <img src="gcash.png" width="80px">Gcash
+        </div>
+        <div class="col s6">
+          <img src="paymaya.png" width="80px">PayMaya
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6">
+          <img src="bt.png" width="80px">Online Bank Transfer
+        </div>
+        <div class="col s6">
+          <img src="visa.png" width="80px">Master/Credit Cards
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Done</a>
+    </div>
+  </div></div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Scan Documents and Extract Data</h4>
+      <div class="row">
+        <p><div class="input-field col s12">
+            <i class="material-icons prefix">map</i>
+            <input id="text1" type="text">
+            <label for="text1">Upload photo here</label>
+          </div>
+          <div class="input-field col s12">
+            <a href="#" class="btn waves-effect waves-light col s12 red darken-4">Upload</a>
+          </div></p>
+        <br><img src="id.jpg" width="80%;">
+        <br>
+        <B>Name:</B>
+        Geoff Sample
+        <BR>
+        <B>ID Number:</B>
+        1238626AB4
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Done</a>
+    </div>
+  </div></BR></div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <h4>Ms. Nicole Domingo</h4>
+      <div class="row">
+        <p><img src="chatbox.jpg" width="90%"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Done</a>
+    </div>
+  </div>
   
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+     $(document).ready(function(){
+    $('.modal').modal();
+  });
+  </script>
 
 
   </body>
