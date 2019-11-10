@@ -47,11 +47,88 @@
  </nav>
  <!-- End of Side bar -->
   
+  <div class="row"> 
+    <div class="col s12">
+        <h4 class="center" style="color: white"><b> Exclusive Promos</b></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="golds2.jpg">
+        <!--   <span class="card-title">Card Title</span> -->
+          <a href="#modal1" class="btn-floating halfway-fab waves-effect waves-light red  btn modal-trigger" id="golds1"><i class="material-icons">camera_alt</i></a>
+        </div>
+        <div class="card-content">
+          <p>Gold's Gym Membership 75% off!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="golds.jpg">
+<!--           <span class="card-title">Card Title</span>
+ -->          <a href="#modal1" class="btn-floating halfway-fab waves-effect waves-light red  btn modal-trigger" id="golds2" ><i class="material-icons">camera_alt</i></a>
+        </div>
+        <div class="card-content">
+          <p>5,000 Golds Gym Membership Discount </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="cbtl.jpg">
+<!--           <span class="card-title">Card Title</span>
+ -->          <a href="#modal1" class="btn-floating halfway-fab waves-effect waves-light red  btn modal-trigger" id="cbtl"><i class="material-icons">camera_alt</i></a>
+        </div>
+        <div class="card-content">
+          <p>Buy 1 Take 1 Coffee</p>
+        </div>
+      </div>
+    </div>
+  </div>    
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content" id="modal-content">
+      <img src="QR.png" alt=""  style="width: 100%">
+    </div>
+  </div>
+
+
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  setTimeout(function(){
+    document.getElementById("modal-content").innerHTML = "You have successfully claimed your reward!";
+  }, 4000);
+
+
+  </script>
 
   </body>
 </html>

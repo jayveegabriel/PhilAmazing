@@ -46,11 +46,98 @@
   <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
  </nav>
  <!-- End of Side bar -->
-  
+  <div>
+    <div class="row" style="margin-top: 2vh">
+      <div class="col s2">
+      </div>
+      <div class="col s8">
+            <center><img src="team.png" width="120px"></center>
+            <center><b style="color: white"><h4> Juan Dela Cruz </h4></b>
+      </div>
+      <div class="col s2">
+      </div> 
+    </div>
+  </div>
+
+  <div style="margin-top: 4vh;">
+    <div class="row">
+      <div class="col s1">
+      </div>
+      <div class="col s10">
+        <table class="highlight" style="padding: 5px">
+            <tr>
+              <td class="col s2"><a class=" modal-trigger" href="#modal1"> <img src="call.png" alt="" style="width:35px;height:35px;"></td>
+              <td class="col s10" style="color: white;"><h6> +63 917 649 2955 </h6></td>
+            </tr>
+            <tr>
+              <td class="col s2"><a class=" modal-trigger" href="#modal1"> <img src="envelope.png" alt=""  style="width:35px;height:35px;"> </td>
+              <td class="col s10" style="color: white;"><h6> juan_delacruz@gmail.com </h6> </td>
+            </tr>
+            <tr>
+              <td class="col s2"><a class=" modal-trigger" href="#modal1"> <img src="Calendar.png" alt=""  style="width:35px;height:35px;"> </td>
+              <td class="col s10"> <input type="text" class="datepicker red darken-2"></td>
+            </tr>
+        </table>
+      </div>
+      <div class="col s1">
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content" id="modal-content">
+      <img src="QR.png" alt=""  style="width: 100%">
+    </div>
+  </div>
+
+  <!-- Calendar -->
+
+ <!--  <input type="text" class="datepicker">
+  <input type="text" class="timepicker">
+ -->
+ <!-- End of Calendar -->
+
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.datepicker');
+      var instances = M.Datepicker.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+      $('.datepicker').datepicker();
+    });      
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.timepicker');
+      var instances = M.Timepicker.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+      $('.timepicker').timepicker();
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, options);
+    });
+
+  // Or with jQuery
+
+    $(document).ready(function(){
+      $('.modal').modal();
+    });
+
+  </script> 
+
 
 
   </body>
