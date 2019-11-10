@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="red darken-2">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="logo2.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br>
+  <div class="section no-pad-bot red darken-2" id="index-banner">
+    <div class="container">
+     <div id="login-page" class="row">
+    <div class="card-panel">
+      <form class="login-form">
+        <div class="row">
+          <center><h5>Registration</h5></center>
+        </div>
+        <div class="row">
+
+          <div class="input-field col s6">
+
+            <input class="validate" id="Firstname" type="text">
+            <label for="Firstname" data-error="wrong" data-success="right">Firstname</label>
+          </div>
+          <div class="input-field col s6">
+
+            <input id="Lastname" type="text">
+            <label for="Lastname">Lastname</label>
+          </div>
+      
+
+        <div class="input-field col s3">
+          
+          <input id="Age" type="number">
+          <label for="Age">Age</label>
+        </div>
+        <div class="input-field col s9">
+           <p>
+    <label>
+      <input type="checkbox" class="filled-in" onclick="check()" />
+      <span>I have an FA assigned.</span>
+    </label>
+  </p>    
+        </div>
+          <div class="input-field col s12" id="hiddenDiv" hidden="">
+            
+            <input id="FAName" type="text">
+            <label for="FAName">Financial Advisor's Name</label>
+
+          </div>
+
+
+           <div class = "row">
+                   <div class = "file-field input-field">
+                  <div class = "btn">
+                     <span>Browse</span>
+                     <input type = "file" />
+                  </div>
+                  
+                  <div class = "file-path-wrapper">
+                     <input class = "file-path validate" type = "text"
+                        placeholder = "ID" />
+                  </div>
+               </div>
+            </div>
+            <div class="input-field col s12">
+            
+            <input id="SSS" type="text">
+            <label for="SSS">SSS Number</label>
+
+          </div>
+
+
+          <div class="input-field col s12">
+            <a href="login.html" class="btn waves-effect waves-light col s12 red darken-4">Submit</a>
+          </div>
+                  
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    function check(){
+      document.getElementById('hiddenDiv').hidden = !document.getElementById('hiddenDiv').hidden
+    }
+  </script>
+
+  </body>
+</html>
